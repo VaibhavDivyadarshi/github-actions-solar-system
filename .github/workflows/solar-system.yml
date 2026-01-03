@@ -81,7 +81,7 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: docker build and push
+      - name: GHCR build and push
         uses: docker/build-push-action@v6
         with:
           context: .
